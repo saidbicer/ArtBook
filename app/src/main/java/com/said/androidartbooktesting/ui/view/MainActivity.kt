@@ -17,9 +17,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //https://blog.mindorks.com/mvi-architecture-android-tutorial-for-beginners-step-by-step-guide
-        setupUI()
-        setupViewModel()
-        setupObserver()
+//        setupUI()
+//        setupViewModel()
+//        setupObserver()
     }
 
     private fun setupObserver() {
