@@ -50,7 +50,7 @@ class ArtViewModel @Inject constructor(private val repository: ArtRepositoryInte
         repository.deleteArt(art)
     }
 
-    fun insertArt(art: Art) = viewModelScope.launch {
+    private fun insertArt(art: Art) = viewModelScope.launch {
         repository.insertArt(art)
     }
 
