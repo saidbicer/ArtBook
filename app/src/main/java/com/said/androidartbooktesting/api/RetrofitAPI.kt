@@ -1,7 +1,7 @@
 package com.said.androidartbooktesting.api
 
 import com.said.androidartbooktesting.model.ImageResponse
-import com.said.androidartbooktesting.util.Constants
+import com.said.androidartbooktesting.utils.Constants
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

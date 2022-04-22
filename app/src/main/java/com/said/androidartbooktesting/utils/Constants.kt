@@ -1,4 +1,4 @@
-package com.said.androidartbooktesting.util
+package com.said.androidartbooktesting.utils
 
 object Constants {
 

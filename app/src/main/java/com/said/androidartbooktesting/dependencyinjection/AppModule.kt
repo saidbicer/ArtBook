@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.room.Room
 import com.said.androidartbooktesting.api.RetrofitAPI
 import com.said.androidartbooktesting.roomdb.MyDatabase
-import com.said.androidartbooktesting.util.Constants
+import com.said.androidartbooktesting.utils.Constants
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

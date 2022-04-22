@@ -9,6 +9,7 @@ data class ImageResponse (
     @SerializedName("hits") var hits: ArrayList<ImageResult> = arrayListOf()
 )
 
+
 data class ImageResult (
     @SerializedName("id") var id: Int? = null,
     @SerializedName("pageURL") var pageURL: String? = null,
