@@ -1,4 +1,4 @@
-package com.said.androidartbooktesting.view
+package com.said.androidartbooktesting.ui.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -15,5 +15,22 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         supportFragmentManager.fragmentFactory = fragmentFactory
         setContentView(R.layout.activity_main)
+
+        //https://blog.mindorks.com/mvi-architecture-android-tutorial-for-beginners-step-by-step-guide
+        setupUI()
+        setupViewModel()
+        setupObserver()
+    }
+
+    private fun setupObserver() {
+        TODO("Not yet implemented")
+    }
+
+    private fun setupViewModel() {
+        TODO("Not yet implemented")
+    }
+
+    private fun setupUI() {
+        TODO("Not yet implemented")
     }
 }

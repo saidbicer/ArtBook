@@ -6,6 +6,7 @@
     android:padding="16dp">
 
     <ImageView
+        android:id="@+id/imgArt"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@mipmap/ic_launcher" />

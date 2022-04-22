@@ -1,4 +1,4 @@
-package com.said.androidartbooktesting.model
+package com.said.androidartbooktesting.data.model
 
 import com.google.gson.annotations.SerializedName
 

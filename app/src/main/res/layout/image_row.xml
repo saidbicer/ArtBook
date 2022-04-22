@@ -6,7 +6,7 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imgViewArt"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:scaleType="centerCrop"

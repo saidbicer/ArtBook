@@ -17,7 +17,7 @@
         android:theme="@style/Theme.AndroidArtBookTesting"
         tools:targetApi="31">
         <activity
-            android:name=".view.MainActivity"
+            android:name="com.said.androidartbooktesting.ui.view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

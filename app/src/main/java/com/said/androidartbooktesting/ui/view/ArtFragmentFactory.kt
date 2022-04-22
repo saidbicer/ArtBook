@@ -1,4 +1,4 @@
-package com.said.androidartbooktesting.view
+package com.said.androidartbooktesting.ui.view
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentFactory

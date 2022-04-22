@@ -1,4 +1,4 @@
-package com.said.androidartbooktesting.view
+package com.said.androidartbooktesting.ui.view
 
 import android.os.Bundle
 import android.view.View

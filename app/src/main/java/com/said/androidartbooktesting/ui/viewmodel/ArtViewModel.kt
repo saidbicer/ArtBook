@@ -1,13 +1,13 @@
-package com.said.androidartbooktesting.viewmodel
+package com.said.androidartbooktesting.ui.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.said.androidartbooktesting.model.ImageResponse
-import com.said.androidartbooktesting.repo.ArtRepositoryInterface
-import com.said.androidartbooktesting.roomdb.Art
-import com.said.androidartbooktesting.utils.Resource
+import com.said.androidartbooktesting.data.model.ImageResponse
+import com.said.androidartbooktesting.data.repository.ArtRepositoryInterface
+import com.said.androidartbooktesting.data.db.entity.Art
+import com.said.androidartbooktesting.util.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import java.lang.Exception

@@ -1,7 +1,8 @@
-package com.said.androidartbooktesting.roomdb
+package com.said.androidartbooktesting.data.db.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
+import com.said.androidartbooktesting.data.db.entity.Art
 
 @Dao
 interface ArtDao {

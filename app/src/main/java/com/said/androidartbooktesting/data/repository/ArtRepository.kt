@@ -1,11 +1,11 @@
-package com.said.androidartbooktesting.repo
+package com.said.androidartbooktesting.data.repository
 
 import androidx.lifecycle.LiveData
-import com.said.androidartbooktesting.api.RetrofitAPI
-import com.said.androidartbooktesting.model.ImageResponse
-import com.said.androidartbooktesting.roomdb.Art
-import com.said.androidartbooktesting.roomdb.ArtDao
-import com.said.androidartbooktesting.utils.Resource
+import com.said.androidartbooktesting.data.api.RetrofitAPI
+import com.said.androidartbooktesting.data.model.ImageResponse
+import com.said.androidartbooktesting.data.db.entity.Art
+import com.said.androidartbooktesting.data.db.dao.ArtDao
+import com.said.androidartbooktesting.util.Resource
 import java.lang.Exception
 import javax.inject.Inject
 
