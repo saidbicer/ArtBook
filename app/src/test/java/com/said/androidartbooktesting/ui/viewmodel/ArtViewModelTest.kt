@@ -5,7 +5,6 @@ import com.said.androidartbooktesting.MainCoroutineRule
 import com.said.androidartbooktesting.data.repository.FakeArtRepository
 import com.said.androidartbooktesting.getOrAwaitValueTest
 import com.google.common.truth.Truth.assertThat
-import com.google.common.truth.Truth.assertWithMessage
 import com.said.androidartbooktesting.util.Status
 import org.junit.Before
 import org.junit.Rule
@@ -39,15 +38,12 @@ class ArtViewModelTest {
         viewModel.makeArt("", "Da Vinci", "23")
         val value = viewModel.insertArtMessage.getOrAwaitValueTest()
         assertThat(value.status).isEqualTo(Status.ERROR)
-
     }
-
 
     @Test
     fun `insert art without artistName returns error`() {
         viewModel.makeArt("Mona Lisa", "", "23")
         val value = viewModel.insertArtMessage.getOrAwaitValueTest()
         assertThat(value.status).isEqualTo(Status.ERROR)
-
     }
 }
