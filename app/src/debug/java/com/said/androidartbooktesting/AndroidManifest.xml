@@ -5,7 +5,7 @@
 
     <application>
         <activity
-            android:name=".HealtTestActivity"
+            android:name=".HiltTestActivity"
             android:exported="false" />
     </application>
 

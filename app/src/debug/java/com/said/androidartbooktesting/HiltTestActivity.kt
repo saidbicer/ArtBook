@@ -4,5 +4,5 @@ import androidx.appcompat.app.AppCompatActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class HealtTestActivity : AppCompatActivity() {
+class HiltTestActivity : AppCompatActivity() {
 }
