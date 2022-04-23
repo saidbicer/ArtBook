@@ -27,25 +27,25 @@ inline fun <reified T : Fragment> launchFragmentInHiltContainer(
     factory: FragmentFactory,
     crossinline action: T.() -> Unit = {}
 ) {
-//    val startActivityIntent = Intent.makeMainActivity(
-//        ComponentName(
-//            ApplicationProvider.getApplicationContext(),
-//            HiltTestActivity::class.java
-//        )
-//    ).putExtra(EmptyFragmentActivity.THEME_EXTRAS_BUNDLE_KEY, themeResId)
-//
-//    ActivityScenario.launch<HiltTestActivity>(startActivityIntent).onActivity { activity ->
-//        activity.supportFragmentManager.fragmentFactory = factory
-//        val fragment: Fragment = activity.supportFragmentManager.fragmentFactory.instantiate(
-//            Preconditions.checkNotNull(T::class.java.classLoader),
-//            T::class.java.name
-//        )
-//        fragment.arguments = fragmentArgs
-//        activity.supportFragmentManager
-//            .beginTransaction()
-//            .add(android.R.id.content, fragment, "")
-//            .commitNow()
-//
-//        (fragment as T).action()
-//    }
+    val startActivityIntent = Intent.makeMainActivity(
+        ComponentName(
+            ApplicationProvider.getApplicationContext(),
+            HiltTestActivity::class.java
+        )
+    ).putExtra(EmptyFragmentActivity.THEME_EXTRAS_BUNDLE_KEY, themeResId)
+
+    ActivityScenario.launch<HiltTestActivity>(startActivityIntent).onActivity { activity ->
+        activity.supportFragmentManager.fragmentFactory = factory
+        val fragment: Fragment = activity.supportFragmentManager.fragmentFactory.instantiate(
+            Preconditions.checkNotNull(T::class.java.classLoader),
+            T::class.java.name
+        )
+        fragment.arguments = fragmentArgs
+        activity.supportFragmentManager
+            .beginTransaction()
+            .add(android.R.id.content, fragment, "")
+            .commitNow()
+
+        (fragment as T).action()
+    }
 }
