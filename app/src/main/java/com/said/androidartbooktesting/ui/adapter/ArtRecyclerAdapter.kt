@@ -50,6 +50,7 @@ class ArtRecyclerAdapter @Inject constructor(val glide: RequestManager) :
             tvArtName.text = art.artistName
             tvArtistName.text = art.artistName
             tvYearName.text = art.year.toString()
+            glide.load(art.imageUrl).into(imgArt)
         }
     }
 

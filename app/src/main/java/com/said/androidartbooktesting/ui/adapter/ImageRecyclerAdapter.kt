@@ -1,5 +1,6 @@
 package com.said.androidartbooktesting.ui.adapter
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -50,7 +51,7 @@ class ImageRecyclerAdapter @Inject constructor(val glide: RequestManager) :
         val url = images[position]
         holder.itemView.apply {
             glide.load(url).into(imageView)
-            setOnItemClickListener {
+            setOnClickListener {
                 onItemClickListener?.let {
                     it(url)
                 }
